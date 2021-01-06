@@ -1,0 +1,55 @@
+
+\documentclass[11pt]{article}
+  	\usepackage{ucs} 
+	\usepackage[utf8x]{inputenc} % Включаем поддержку UTF8  
+	\usepackage[russian]{babel}  % Включаем пакет для поддержки русского языка 
+	\usepackage {mathtext}
+	\usepackage{amsmath, amssymb}
+	\usepackage{graphicx}
+	\usepackage{listings}
+	\usepackage{hyperref}
+	\usepackage{revsymb}
+	\usepackage{listings}
+\lstset{language=[90]Fortran,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{red},
+  commentstyle=\color{green},
+  morecomment=[l]{!\ }% Comment only with space after !
+}
+	\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+	}
+	\urlstyle{same}
+	\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg}
+	\setcounter{MaxMatrixCols}{20}
+	\graphicspath{{pictures/}}
+    \title{\textbf{Практическое исследование цепочки Гейзенберга S=1/2 \\ Часть II \\ -- \\ 
+	Practical study of the Heisenberg chain S=1/2 \\ Part II}}
+    \author{И.А.Юхновский, Ю.И.Аношкин}
+    \date{ноябрь 2020}
+    
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\section*{Аннотация}
+В первой части работы <<Практическое исследование цепочки Гейзенберга S = 1/2>> были рассмотрены теоретические аспекты одномерной спиновой системы, разработан алгоритм рассчета и приведено программное обеспечение на языке Fortran с примененим библиотеки многопроцессрных параллельных вычислений openMPI. В данной работе рассматривается практические аспекты построения одномерных спиновых систем.
+
+
+\section*{Abstract}
+In the first part of the work <<Software simulation of the Heisenberg chain S = 1/2>> theoretical aspects of a one-dimensional spin system were considered, a calculation algorithm was developed, and software in the Fortran language was provided using the openMPI multiprocessor parallel computing library. In this second part, we consider practical aspects of constructing one-dimensional spin systems.
+
+\tableofcontents{}
+
+\section{Введение}
+
+\begin{thebibliography}{3}
+\bibitem{mp}
+Катанин А.А., Ирхин В.Ю., Игошев П.А. // Модельные подходы к магнетизму двумерных зонных систем. -- М.:ФИЗМАТЛИТ, 2013
+
+\end{thebibliography}
+
+\end{document}
